@@ -1,0 +1,14 @@
+
+STM32 XGBoost (multiclass) AUTO-RUN
+Features=20, Classes=15
+Approx RAM headroom: 522067 bytes
+
+Preset inference:
+Top: Normal (id=7) p=0.1133
+ 0:Backdoor=0.0649   1:DDoS_HTTP=0.0616   2:DDoS_ICMP=0.0616   3:DDoS_TCP=0.0616  
+ 4:DDoS_UDP=0.0616   5:Fingerprinting=0.0620   6:MITM=0.0668   7:Normal=0.1133  
+ 8:Password=0.0619   9:Port_Scanning=0.0671  10:Ransomware=0.0662  11:SQL_injection=0.0618  
+12:Uploading=0.0619  13:Vulnerability_scanner=0.0618  14:XSS=0.0659  
+Latency over 200 runs: avg=2964.30 us  min=2963.14 us  max=2964.91 us  @HCLK=64000000 Hz  (throughput=337.3/s)
+
+-- DONE --
