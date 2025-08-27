@@ -65,15 +65,70 @@ pip install -r requirements.txt
 
 `requirements.txt`
 
+Below are the files ready to drop in.
+
+---
+
+### `requirements.txt` (curated, pinned, slim)
+
+```txt
+# --- Core stack ---
+numpy==2.1.3
+scipy==1.15.2
+pandas==2.2.3
+joblib==1.4.2
+
+# --- Classical ML ---
+scikit-learn==1.6.1
+xgboost==2.0.3
+lightgbm==4.6.0
+imbalanced-learn==0.13.0
+
+# --- Model → C tools ---
+tl2cgen==1.0.0
+m2cgen==0.10.0
+treelite==4.4.1
+treelite-runtime==4.4.1   # keep runtime aligned with treelite; your freeze had 3.9.1
+
+# --- Viz / notebooks ---
+matplotlib==3.10.1
+seaborn==0.13.2
+ipykernel==6.29.5
+ipywidgets==8.1.7
+
+# --- Utility (serial monitor in Python, optional) ---
+pyserial==3.5
 ```
-xgboost>=2.0.0
-scikit-learn>=1.4.0
-pandas>=2.2.0
-numpy>=1.26.0
-joblib>=1.3.0
-jupyterlab
-m2cgen>=0.10.0
+
+Install:
+
+```bash
+python -m venv thesis-env
+source thesis-env/bin/activate
+pip install -U pip
+pip install -r requirements.txt
 ```
+
+---
+
+### `requirements-dl.txt` (optional heavy extras)
+
+These aren’t needed for the MCU work; include only if you want your TF experiments reproducible.
+
+```txt
+tensorflow==2.19.0
+keras==3.9.2
+tensorboard==2.19.0
+```
+
+Install (on top of the base env):
+
+```bash
+pip install -r requirements-dl.txt
+```
+
+---
+
 
 ### STM32 toolchain (device side)
 
