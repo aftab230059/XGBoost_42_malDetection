@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+1190196	    476	   3164	1193836	 12376c	MalwareDetection.elf
